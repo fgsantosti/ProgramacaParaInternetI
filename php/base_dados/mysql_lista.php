@@ -1,7 +1,8 @@
 <?php 
 
+include_once 'conexao.php';
 //abre conexão com o MySQL
-$conn = mysqli_connect("127.0.0.1", "root", "", "livro");
+//$conn = mysqli_connect("127.0.0.1", "root", "", "livro");
 //define a consulta que será realizada
 $query = 'SELECT codigo, nome FROM famosos';
 

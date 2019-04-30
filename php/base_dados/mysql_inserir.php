@@ -1,8 +1,8 @@
 <?php
 
 //abre conexão com o MySQL
-//$conn = mysqli_connect("127.0.0.1", "my_user", "my_password", "my_db");
-$conn = mysqli_connect("127.0.0.1", "root", "", "livro");
+//$conn = mysqli_connect("127.0.0.1", "my_user", "my_password", "my_db");$
+conn = mysqli_connect("127.0.0.1", "root", "", "livro");
 
 //inserir vários registros
 //mysqli_query(connection,query,resultmode);
