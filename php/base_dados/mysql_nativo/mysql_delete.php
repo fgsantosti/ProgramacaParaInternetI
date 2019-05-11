@@ -3,7 +3,7 @@
 	//$id = $_GET["id"];
 	
   	//Alteração direta
-  	$id = 7; 
+  	$id = 6; 
 
 	include_once 'conexao.php';    
 	  

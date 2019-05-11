@@ -1,9 +1,10 @@
 <?php
 	//Alteração via formulário
+	//$id = $_POST["id"];
 	//$nome = $_POST["nome"];
 	//$codigo = $_POST["codigo"];
   	
-  	//Alteração direta
+  	//forma direta
   	$id = 4; 
   	$nome = 'Steve Jobs'; 
   	$codigo = 4;

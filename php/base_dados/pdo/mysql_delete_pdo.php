@@ -1,9 +1,9 @@
 <?php
-	//Alteração via formulário
-	//$id = $_GET["id"];
+	//Delete via lista
+	$id = $_GET["id"];
   	
   	//Alteração direta
-  	$id = 8; 
+  	//$id = 8; 
 
 	//incluindo as funcionalidaes do arquivo mysql_conexao_pdo.php
 	include_once 'mysql_conexao_pdo.php';
