@@ -1,12 +1,8 @@
 <?php
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
 
 	//incluindo as funcionalidaes do arquivo mysql_conexao_pdo.php
 	include_once 'mysql_conexao_pdo.php';
 
-	try {
 		//executa uma instrução SQL de consulta
 		$result = $conn -> query("SELECT codigo, nome FROM famosos");
 
@@ -18,7 +14,4 @@
 			}
 		}	
 		$conn = null;
-	} catch (PDOException $e) {
-		print "Erro!: ". $e -> getMessage(). "<br>";
-	}
 

@@ -6,8 +6,7 @@ $famosos = array();
 $famosos['codigo'] = $_POST['codigo'];
 $famosos['nome'] = $_POST['nome'];
 
-//try {
-    //exeuta uma série de instruções SQL
+//exeuta uma série de instruções SQL
 $result = $conn->exec("INSERT INTO famosos(codigo, nome) VALUES ('{$famosos['codigo']}','{$famosos['nome']}')");
 
 if ($result) {

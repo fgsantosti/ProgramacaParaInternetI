@@ -15,18 +15,16 @@
 
 	//incluindo as funcionalidaes do arquivo mysql_conexao_pdo.php
 	include_once 'mysql_conexao_pdo.php';
-	try {
-		//executa uma instrução SQL de update
-		$result = $conn -> query("UPDATE famosos SET 
+
+	//executa uma instrução SQL de update
+	$result = $conn -> query("UPDATE famosos SET 
 								codigo = '{$famosos['codigo']}',
 								nome = '{$famosos['nome']}'
 								WHERE idFamosos = '{$famosos['id']}'");
-		if ($result) {
-			echo "Atualizado com sucesso!";
-		}else{
-			echo "Erro ao atualizar!";
-		}	
-		$conn = null;
-	} catch (PDOException $e) {
-		print "Erro!: ". $e -> getMessage(). "<br>";
-	}
+	if ($result) {
+		$msg = "Atualizado com sucesso!";
+		header("Location:mysql_lista_pdo_obj.php?msg=$msg");
+	}else{
+		echo "Erro ao atualizar!";
+	}	
+	$conn = null;

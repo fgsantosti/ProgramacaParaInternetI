@@ -2,7 +2,7 @@
 	//Alteração via formulário
 
 	$famosos = array(); 
-
+	
 	$famosos['codigo'] = $_POST['codigo'];
 	$famosos['nome'] = $_POST['nome'];
 	$famosos['id'] = $_POST['id'];

@@ -13,9 +13,15 @@
 		//incluindo as funcionalidaes do arquivo mysql_conexao_pdo.php
 		include_once 'mysql_conexao_pdo.php';
 
+		if (isset($_GET['msg'])) {
+			$msg = $_GET['msg'];
+			echo "<div class='alert alert-success' role='alert'>
+			  $msg
+			</div>";
+		}
 
-			//executa uma instrução SQL de consulta
-			$result = $conn -> query("SELECT idFamosos, codigo, nome FROM famosos");
+		//executa uma instrução SQL de consulta
+		$result = $conn -> query("SELECT idFamosos, codigo, nome FROM famosos");
 
 			echo '
 			<table class="table table">

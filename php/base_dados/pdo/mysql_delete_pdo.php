@@ -11,7 +11,8 @@
 		//executa uma instrução SQL de update
 		$result = $conn -> query("DELETE FROM famosos WHERE idFamosos = '{$id}'");
 		if ($result) {
-			echo "Deletado com sucesso!";
+			echo "Deletado com sucesso!<br>";
+			header("Location:mysql_lista_pdo_obj.php");
 		}else{
 			echo "Erro ao deletar!";
 		}	
@@ -19,3 +20,5 @@
 	} catch (PDOException $e) {
 		print "Erro!: ". $e -> getMessage(). "<br>";
 	}
+
+	//echo '<a href="mysql_lista_pdo_obj.php">Voltar para Página listar</a>';
