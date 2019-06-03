@@ -1,5 +1,8 @@
 <?php
 
+//$categoria = array();
+//$categoria['nome'] = $_POST['nome'];
+
 $nome = $_POST['nome'];
 
 require_once 'mysql_conexao_pdo.php';
